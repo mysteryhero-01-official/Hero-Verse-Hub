@@ -4,39 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#050508" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <title>HERO-VERSE STUDIOS</title>
-    <meta name="description" content="Enter HERO-VERSE STUDIOS: a creative command center for Voltage Hero, Desi GTA, spatial sound, and next-generation storytelling." />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="HERO-VERSE STUDIOS" />
-    <meta property="og:description" content="A creative command center for Voltage Hero, Desi GTA, spatial sound, and next-generation storytelling." />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="HERO-VERSE STUDIOS" />
-    <meta name="twitter:description" content="A creative command center for Voltage Hero, Desi GTA, spatial sound, and next-generation storytelling." />
-    <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/pwa-192.png" />
+
+    <!-- CLERK FRONTEND INITIALIZER -->
+    <script>
+      window.VITE_CLERK_PUBLISHABLE_KEY = "pk_test_dXAtZnJvZy0zOTM3LmNsZXJrLmFjY291bnRzLmRldiQ";
+      window.CLERK_PUBLISHABLE_KEY = "pk_test_dXAtZnJvZy0zOTM3LmNsZXJrLmFjY291bnRzLmRldiQ";
+      window.__CLERK_FRONTEND_API__ = "up-frog-3937.clerk.accounts.dev";
+      window.process = {
+        env: {
+          NODE_ENV: "production",
+          VITE_CLERK_PUBLISHABLE_KEY: "pk_test_dXAtZnJvZy0zOTM3LmNsZXJrLmFjY291bnRzLmRldiQ"
+        }
+      };
+    </script>
+
+    <!-- Clerk Official Frontend Script -->
+    <script
+      async
+      crossorigin="anonymous"
+      data-clerk-publishable-key="pk_test_dXAtZnJvZy0zOTM3LmNsZXJrLmFjY291bnRzLmRldiQ"
+      src="https://up-frog-3937.clerk.accounts.dev/npm/@clerk/clerk-js@latest/dist/clerk.browser.js"
+      type="text/javascript">
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- CSS file linking -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" crossorigin href="./index-BgB-X15I.css">
   </head>
   <body>
-    <!-- Local environment bypass script taaki loader freeze na ho -->
-    <script>
-      window.__REPLIT_ENV__ = false;
-      window.ENV = { MODE: 'production' };
-    </script>
-
     <div id="root"></div>
-
-    <!-- Main JavaScript Logic file linking -->
     <script type="module" crossorigin src="./index-D6CLe8xs.js"></script>
   </body>
-      </html>
-  
+</html>
