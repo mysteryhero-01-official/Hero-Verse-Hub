@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    { "source": "/api/chat", "destination": "/api/chat.js" },
+    { "source": "/api/auth/(.*)", "destination": "/api/auth.js" },
+    { "source": "/api/login", "destination": "/api/auth.js" },
+    { "source": "/api/otp/(.*)", "destination": "/api/otp.js" },
+    { "source": "/api/otp", "destination": "/api/otp.js" },
+    { "source": "/api/storage/(.*)", "destination": "/api/storage.js" },
+    { "source": "/api/storage", "destination": "/api/storage.js" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
