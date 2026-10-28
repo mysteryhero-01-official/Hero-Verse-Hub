@@ -5,31 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#050508" />
     <title>HERO-VERSE STUDIOS</title>
-    
-    <!-- MOBILE SCREEN INSPECTOR (ERRORS DEKHNE KE LIYE) -->
-    <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
-    <script>eruda.init();</script>
 
-    <!-- CLERK FRONTEND INITIALIZER -->
+    <!-- CLERK CONFIG -->
     <script>
       window.VITE_CLERK_PUBLISHABLE_KEY = "pk_test_dXAtZnJvZy0zOTM3LmNsZXJrLmFjY291bnRzLmRldiQ";
       window.CLERK_PUBLISHABLE_KEY = "pk_test_dXAtZnJvZy0zOTM3LmNsZXJrLmFjY291bnRzLmRldiQ";
-      window.__CLERK_FRONTEND_API__ = "up-frog-3937.clerk.accounts.dev";
-      window.process = {
-        env: {
-          NODE_ENV: "production",
-          VITE_CLERK_PUBLISHABLE_KEY: "pk_test_dXAtZnJvZy0zOTM3LmNsZXJrLmFjY291bnRzLmRldiQ"
-        }
-      };
-    </script>
-
-    <!-- Clerk Official Frontend Script -->
-    <script
-      async
-      crossorigin="anonymous"
-      data-clerk-publishable-key="pk_test_dXAtZnJvZy0zOTM3LmNsZXJrLmFjY291bnRzLmRldiQ"
-      src="https://up-frog-3937.clerk.accounts.dev/npm/@clerk/clerk-js@latest/dist/clerk.browser.js"
-      type="text/javascript">
+      window.process = { env: { NODE_ENV: 'production' } };
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
