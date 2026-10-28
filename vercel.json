@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/__clerk/(.*)",
-      "destination": "https://up-frog-3937.clerk.accounts.dev/npm/@clerk/$1"
+      "destination": "https://up-frog-3937.clerk.accounts.dev/$1"
     },
     { "source": "/api/chat", "destination": "/api/chat.js" },
     { "source": "/api/auth/(.*)", "destination": "/api/auth.js" },
