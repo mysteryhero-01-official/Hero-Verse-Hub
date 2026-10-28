@@ -1,12 +1,16 @@
 {
-  "cleanUrls": true,
   "rewrites": [
+    {
+      "source": "/api/__clerk/(.*)",
+      "destination": "https://up-frog-3937.clerk.accounts.dev/npm/@clerk/$1"
+    },
     { "source": "/api/chat", "destination": "/api/chat.js" },
     { "source": "/api/auth/(.*)", "destination": "/api/auth.js" },
     { "source": "/api/login", "destination": "/api/auth.js" },
     { "source": "/api/otp/(.*)", "destination": "/api/otp.js" },
     { "source": "/api/otp", "destination": "/api/otp.js" },
     { "source": "/api/storage/(.*)", "destination": "/api/storage.js" },
-    { "source": "/api/storage", "destination": "/api/storage.js" }
+    { "source": "/api/storage", "destination": "/api/storage.js" },
+    { "source": "/((?!api|assets|.*\\..*).*)", "destination": "/index.html" }
   ]
 }
